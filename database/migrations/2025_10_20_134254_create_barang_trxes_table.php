@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('barang', function (Blueprint $table) {
+        Schema::create('barang_trxes', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal')->nullable();
             $table->string('nama_importir')->nullable();
