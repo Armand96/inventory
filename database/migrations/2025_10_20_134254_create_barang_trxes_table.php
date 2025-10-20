@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('penyebutan')->nullable();
             $table->string('satuan')->nullable();
             $table->string('packaging')->nullable();
-            $table->string('isi_packaging')->nullable();
+            $table->float('isi_packaging')->nullable();
             $table->float('jumlah')->nullable();
             $table->float('jumlah_dalam_satuan')->nullable();
             $table->timestamps();

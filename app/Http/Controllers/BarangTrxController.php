@@ -45,7 +45,7 @@ class BarangTrxController extends Controller
     public function summary()
     {
         $summary = DB::table('barang_trxes')
-            ->select('nama_barang', 'satuan', DB::raw('SUM(jumlah) as total_jumlah'))
+            ->select('nama_barang', 'satuan', DB::raw('SUM(jumlah_dalam_satuan) as total_jumlah'))
             ->groupBy('nama_barang', 'satuan')
             ->get();
 
